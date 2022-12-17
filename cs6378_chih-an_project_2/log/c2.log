@@ -1,0 +1,11 @@
+Socket created successfully
+Trying to connect to server..1
+Connected to the server
+Send WRITE a.txt client2
+Receive OK
+Send WRITE c.txt client2
+Receive OK
+Send WRITE a.txt client2_2
+Receive OK
+Send BYE
+Connection closed

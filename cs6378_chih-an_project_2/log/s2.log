@@ -1,0 +1,103 @@
+Server 2 is started
+***Server hosted file list***
+a.txt
+c.txt
+b.txt
+*****************************
+Start initialization
+Initialization done
+Listining to port: 8085...
+Trying to connect to 127.0.0.1:8084
+Connect successfully
+Starting daemon threads...
+Daemon threads start successfully
+Listining to port: 8082...
+Start listening to client's requests...
+Receive REQME 1 1 c.txt, server:1->2
+Need to defer? 0
+Send REPLY c.txt$#, server:2->1
+Connection established
+Receiving messages...
+Receive WRITE c.txt client4 from client
+Receive BC c.txt client3, server:1->2
+Send ACK c.txt$#, server:2->1
+Receive REQME 1 0 a.txt, server:0->2
+Need to defer? 0
+Send REPLY a.txt$#, server:2->0
+Local timestamp[c.txt]=2
+Send REQME 2 2 c.txt$#, server:2->0
+Send REQME 2 2 c.txt$#, server:2->1
+Waiting for replies...
+Receive REPLY c.txt, server:1->2
+Receive REPLY c.txt, server:0->2
+Receive 2 replies
+***Enter CS (file:c.txt)***
+Write 'client4' to c.txt
+Send BC c.txt client4$#, server:2->0
+Send BC c.txt client4$#, server:2->1
+Waiting for ACKs...
+Receive ACK c.txt, server:1->2
+outstd_ack_cnt=1
+Receive BC a.txt client0, server:0->2
+Receive REQME 1 1 b.txt, server:1->2
+Need to defer? 0
+Send ACK a.txt$#, server:2Send REPLY b.txt$#, server:2->1
+Send ACK a.txt$#, server:2Send REPLY b.txt$#, server:2->1
+Receive ACK c.txt, server:0->2
+outstd_ack_cnt=0
+Receive 2 ACK
+***Exit CS (file:c.txt)***
+Receive BC b.txt client3, server:1->2
+Send ACK b.txt$#, server:2->1
+Send OK
+Receive WRITE b.txt client4 from client
+Receive REQME 2 0 b.txt, server:0->2
+Need to defer? 0
+Send REPLY b.txt$#, server:2->0
+Local timestamp[b.txt]=3
+Send REQME 3 2 b.txt$#, server:2->0
+Send REQME 3 2 b.txt$#, server:2->1
+Waiting for replies...
+Receive REPLY b.txt, server:1->2
+Receive BC b.txt client0, server:0->2
+Send ACK b.txt$#, server:2->0
+Receive REQME 4 1 b.txt, server:1->2
+Need to defer? 1
+Receive REPLY b.txt, server:0->2
+Receive 2 replies
+***Enter CS (file:b.txt)***
+Write 'client4' to b.txt
+Send BC b.txt client4$#, server:2->0
+Send BC b.txt client4$#, server:2->1
+Waiting for ACKs...
+Receive ACK b.txt, server:1->2
+Receive ACK b.txt, server:1->2
+Receive ACK b.txt, server:0->2
+outstd_ack_cnt=1
+outstd_ack_cnt=1
+outstd_ack_cnt=0
+Receive BC a.txt client0_2, server:0->2
+Send ACK a.txt$#, server:2->0
+Receive 2 ACK
+***Exit CS (file:b.txt)***
+Send deferred REPLY b.txt$#, server:2->1
+Receive BC b.txt client3_2, server:1->2
+Send ACK b.txt$#, server:2->1
+Send OK
+Receive BYE from client
+Connection closed
+Start listening to client's requests...
+Receive REQME 2 1 a.txt, server:1->2
+Need to defer? 0
+Send REPLY a.txt$#, server:2->1
+Receive BC a.txt client2, server:1->2
+Send ACK a.txt$#, server:2->1
+Receive REQME 3 1 c.txt, server:1->2
+Need to defer? 0
+Send REPLY c.txt$#, server:2->1
+Receive BC c.txt client2, server:1->2
+Send ACK c.txt$#, server:2->1
+Receive BC a.txt client2_2, server:1->2
+Send ACK a.txt$#, server:2->1
+Receive BC c.txt client1, server:1->2
+Send ACK c.txt$#, server:2->1

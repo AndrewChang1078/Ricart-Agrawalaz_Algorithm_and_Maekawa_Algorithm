@@ -1,0 +1,27 @@
+Socket created successfully
+Trying to connect to server..0
+Connected to the server
+Send ENQUIRY
+Receive a.txt,c.txt,b.txt
+
+Server hosted file list:
+a.txt
+c.txt
+b.txt
+
+Send ENQUIRY
+Receive a.txt,c.txt,b.txt
+
+Server hosted file list:
+a.txt
+c.txt
+b.txt
+
+Send WRITE a.txt client0
+Receive OK
+Send WRITE b.txt client0
+Receive OK
+Send WRITE a.txt client0_2
+Receive OK
+Send BYE
+Connection closed

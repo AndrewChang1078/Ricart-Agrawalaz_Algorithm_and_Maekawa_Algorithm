@@ -1,0 +1,186 @@
+Server 1 is started
+***Server hosted file list***
+a.txt
+c.txt
+b.txt
+*****************************
+Start initialization
+Initialization done
+Trying to connect to 127.0.0.1:8083
+Connect successfully
+Listining to port: 8084...
+Starting daemon threads...
+Daemon threads start successfully
+Listining to port: 8081...
+Start listening to client's requests...
+Connection established
+Receiving messages...
+Receive ENQUIRY from client
+Send a.txt,c.txt,b.txt
+Receive WRITE c.txt client3 from client
+Local timestamp[c.txt]=1
+Send REQME 1 1 c.txt$#, server:1->0
+Send REQME 1 1 c.txt$#, server:1->2
+Waiting for replies...
+Receive REPLY c.txt, server:2->1
+Receive REPLY c.txt, server:0->1
+Receive 2 replies
+***Enter CS (file:c.txt)***
+Write 'client3' to c.txt
+Send BC c.txt client3$#, server:1->0
+Send BC c.txt client3$#, server:1->2
+Waiting for ACKs...
+Receive ACK c.txt, server:2->1
+outstd_ack_cnt=1
+Receive ACK c.txt, server:0->1
+outstd_ack_cnt=0
+Receive REQME 1 0 a.txt, server:0->1
+Need to defer? 0
+Send REPLY a.txt$#, server:1->0
+Receive 2 ACK
+***Exit CS (file:c.txt)***
+Receive REQME 2 2 c.txt, server:2->1
+Need to defer? 0
+Send REPLY c.txt$#, server:1->2
+Receive BC a.txt client0, server:0->1
+Send ACK a.txt$#, server:1->0
+Send OK
+Receive WRITE b.txt client3 from client
+Receive BC c.txt client4, server:2->1
+Send ACK c.txt$#, server:1->2
+Local timestamp[b.txt]=1
+Send REQME 1 1 b.txt$#, server:1->0
+Send REQME 1 1 b.txt$#, server:1->2
+Waiting for replies...
+Receive REPLY b.txt, server:0->1
+Receive REPLY b.txt, server:2->1
+Receive 2 replies
+***Enter CS (file:b.txt)***
+Write 'client3' to b.txt
+Send BC b.txt client3$#, server:1->0
+Send BC b.txt client3$#, server:1->2
+Waiting for ACKs...
+Receive ACK b.txt, server:0->1
+outstd_ack_cnt=1
+Receive ACK b.txt, server:2->1
+outstd_ack_cnt=0
+Receive REQME 2 0 b.txt, server:0->1
+Need to defer? 1
+Receive REQME 3 2 b.txt, server:2->1
+Need to defer? 1
+Receive 2 ACK
+***Exit CS (file:b.txt)***
+Send deferred REPLY b.txt$#, server:1->0
+Send deferred REPLY b.txt$#, server:1->2
+Receive BC b.txt client0, server:0->1
+Send ACK b.txt$#, server:1->0
+Send OK
+Receive WRITE b.txt client3_2 from client
+Local timestamp[b.txt]=4
+Send REQME 4 1 b.txt$#, server:1->0
+Send REQME 4 1 b.txt$#, server:1->2
+Waiting for replies...
+Receive REPLY b.txt, server:0->1
+Receive BC b.txt client4, server:2->1
+Send ACK b.txt$#, server:1->2
+Receive BC a.txt client0_2, server:0->1
+Send ACK a.txt$#, server:1->0
+Receive REPLY b.txt, server:2->1
+Receive 2 replies
+***Enter CS (file:b.txt)***
+Write 'client3_2' to b.txt
+Send BC b.txt client3_2$#, server:1->0
+Send BC b.txt client3_2$#, server:1->2
+Waiting for ACKs...
+Receive ACK b.txt, server:2->1
+outstd_ack_cnt=1
+Receive ACK b.txt, server:0->1
+outstd_ack_cnt=0
+Receive 2 ACK
+***Exit CS (file:b.txt)***
+Send OK
+Receive BYE from client
+Connection closed
+Start listening to client's requests...
+Connection established
+Receiving messages...
+Receive WRITE a.txt client2 from client
+Local timestamp[a.txt]=2
+Send REQME 2 1 a.txt$#, server:1->0
+Send REQME 2 1 a.txt$#, server:1->2
+Waiting for replies...
+Receive REPLY a.txt, server:0->1
+Receive REPLY a.txt, server:2->1
+Receive 2 replies
+***Enter CS (file:a.txt)***
+Write 'client2' to a.txt
+Send BC a.txt client2$#, server:1->0
+Send BC a.txt client2$#, server:1->2
+Waiting for ACKs...
+Receive ACK a.txt, server:0->1
+outstd_ack_cnt=1
+Receive ACK a.txt, server:2->1
+outstd_ack_cnt=0
+Receive 2 ACK
+***Exit CS (file:a.txt)***
+Send OK
+Receive WRITE c.txt client2 from client
+Local timestamp[c.txt]=3
+Send REQME 3 1 c.txt$#, server:1->2
+Waiting for replies...
+Receive REPLY c.txt, server:2->1
+Receive 2 replies
+***Enter CS (file:c.txt)***
+Write 'client2' to c.txt
+Send BC c.txt client2$#, server:1->0
+Send BC c.txt client2$#, server:1->2
+Waiting for ACKs...
+Receive ACK c.txt, server:0->1
+outstd_ack_cnt=1
+Receive ACK c.txt, server:2->1
+outstd_ack_cnt=0
+Receive 2 ACK
+***Exit CS (file:c.txt)***
+Send OK
+Receive WRITE a.txt client2_2 from client
+Local timestamp[a.txt]=3
+Waiting for replies...
+Receive 2 replies
+***Enter CS (file:a.txt)***
+Write 'client2_2' to a.txt
+Send BC a.txt client2_2$#, server:1->0
+Send BC a.txt client2_2$#, server:1->2
+Waiting for ACKs...
+Receive ACK a.txt, server:0->1
+outstd_ack_cnt=1
+Receive ACK a.txt, server:2->1
+outstd_ack_cnt=0
+Receive 2 ACK
+***Exit CS (file:a.txt)***
+Send OK
+Receive BYE from client
+Connection closed
+Start listening to client's requests...
+Connection established
+Receiving messages...
+Receive ENQUIRY from client
+Send a.txt,c.txt,b.txt
+Receive WRITE c.txt client1 from client
+Local timestamp[c.txt]=4
+Waiting for replies...
+Receive 2 replies
+***Enter CS (file:c.txt)***
+Write 'client1' to c.txt
+Send BC c.txt client1$#, server:1->0
+Send BC c.txt client1$#, server:1->2
+Waiting for ACKs...
+Receive ACK c.txt, server:0->1
+outstd_ack_cnt=1
+Receive ACK c.txt, server:2->1
+outstd_ack_cnt=0
+Receive 2 ACK
+***Exit CS (file:c.txt)***
+Send OK
+Receive BYE from client
+Connection closed
+Start listening to client's requests...
